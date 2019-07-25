@@ -57,3 +57,9 @@ This method simply returns true if one of the measurements is below 20cm.
 
 ### Important
 Most of the methods also assume that an object is closer than 15cm when a sensor returns a value more than 644 since the sensors often return 645 when an object is too close. The user may consider to disable this feature if the robot is going to be used in an open are where 645 can be a common real reading. 
+
+# sensor.launch 
+sensor.launch is a launch file to launch the rosserial node with selected port and the optimisation node at the same time. The user can change the port selection from the codes 3rd line by replacing /dev/ttyACM0 with wanted port.
+```
+<param name="port" value="/dev/ttyACM0"/>
+```
