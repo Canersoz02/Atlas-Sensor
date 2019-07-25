@@ -37,5 +37,9 @@ You can look at the multipleSensor.ino files for example codes to publish data f
 # sensorOptimise.py
 Sensor optimise is the main code in this project and it utilizes various methods to optimise sensor data read from ros topics. This optimisation was especially necessary in this project since the maxsonar sensors gave unreliable data under 15cm and it was critical for the robot to detect objects/people nearby. 
 
-The code includes different methods for optimising the data in different ways by using 5 consecutive data readings. The user can select whichever method by changing the following line in the file. 
+The code includes different methods for optimising the data in different ways by using 5 consecutive data readings. The user can select whichever method tp use by changing the "lowest" method with their selected one.
+```
+a.pub.publish(lowest(arr))
+```
+Each of the methods will be evaluated below:
 
