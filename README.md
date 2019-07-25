@@ -54,7 +54,7 @@ The average method simply returns the average of the given array. Although it is
 ### setdDev()
 This method tries to determine when the object is below 15cm by looking at the standard deviation of the given array. Since the values fluctuate a lot when the object is too close, the method reurns 0 when the standard deviation is more than 4. This method also optimises data sets that do not fluctuate by using the lowest() method. Although stDev() works well in guessing when the object is below threshold value, it also identifies the robots non uniform movement as below 15 cm since the data also fluctuates. Therefore, this method is not very suitable for real life applications. 
 
-### lowset()
+### lowest()
 Despite its simplicity lowest() in my opinion is the most suitable sensor for real life applications. It siply takes an array and returns the lowest value in it. I preferred calculating the lowest instead of the median since the sensor never returns a value that is closer than the object really is. Therefore, the smallest value is nearly always the correct one. The only shortcoming of this method is when all of the measurements in the set is wrong.(such as [30, 48, 34, 500] when the real distance was 12.) stdDev can be used in this case however it has other problems as discussed above. Because there will be many sensor on the robot, most probably, one of them will guess the correct value below 15cm. 
 
 ### inRange()
