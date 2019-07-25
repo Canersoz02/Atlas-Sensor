@@ -25,6 +25,7 @@ In this project two Maxsonar EZ1 ultrasonic distance sensors were used however y
 
 # Arduino Sensor Library
 This library makes it easier to initialize and read data from sensors. 
+
 Creating new sensor objects with given pins:
 ``` 
 #include <Sensor.h>
