@@ -21,7 +21,7 @@ Move the Sensor file into your arduino libraries to be able to use it as a stand
 # Sensor schematics
 In this project two Maxsonar EZ1 ultrasonic distance sensors were used however you can easily add more sensors or switch to another distance sensor with a few alterations in the arduino code. 
 
-![](maxsonar-arduino-schematics.png)
+![](maxsonar-arduino-schematics-2.png)
 
 # Arduino Sensor Library
 This library makes it easier to initialize and read data from sensors. 
