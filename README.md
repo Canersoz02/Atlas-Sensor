@@ -10,8 +10,13 @@ MegaunıLink Arduino Library for exponantial filtering: [https://www.megunolink.
 
 # Installation
 ```
+mkdir -p ~/catkin_ws/src
+cd ~/catkin_ws/
+catkin_make
 git clone https://github.com/Canersoz02/Atlas-Sensor.git
 ```
+### Important 
+Move the Sensor file into your arduino libraries to be able to use it as a standard arduino library. 
 
 # Sensor schematics
 In this project two Maxsonar EZ1 ultrasonic distance sensors were used however you can easily add more sensors or switch to another distance sensor with a few alterations in the arduino code. 
