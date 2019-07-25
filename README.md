@@ -27,3 +27,4 @@ float data1 = sens1.retValue();
 float data2 = sens2.retValue();
 delay(20);
 ```
+You can look at multipleSensor.ino file for an example code to publish the data of two sensor into seperate ros topics.  
