@@ -11,5 +11,19 @@ MegaunıLink Arduino Library for exponantial filtering: [https://www.megunolink.
 # Sensor schematics
 In this project two Maxsonar EZ1 ultrasonic distance sensors were used however you can easily add more sensors or switch to another distance sensor with a few alterations in the arduino code. 
 
+![](atlas-sensor-schematics.png)
+
 # Arduino Sensor Library
-This library makes it easier to initialize and 
+This library makes it easier to initialize and read data from sensors. 
+Creating new sensor objects with given pins:
+``` 
+#include <Sensor.h>
+Sensor sens1(7);
+Sensor sens2(6);
+```
+Reading data from sensors:
+```
+float data1 = sens1.retValue();
+float data2 = sens2.retValue();
+delay(20);
+```
