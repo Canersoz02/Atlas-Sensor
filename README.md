@@ -52,7 +52,7 @@ Each of the methods will be evaluated below:
 ### avg()
 The average method simply returns the average of the given array. Although it is good at estimating the distance when the datas are close to each other, it isn't very reliable when the object is too close to the sensor since the sensors reading fluctaute from 12 to 640 instantly. 
 
-### setdDev()
+### stdDev()
 This method tries to determine when the object is below 15cm by looking at the standard deviation of the given array. Since the values fluctuate a lot when the object is too close, the method reurns 0 when the standard deviation is more than 4. This method also optimises data sets that do not fluctuate by using the lowest() method. Although stDev() works well in guessing when the object is below threshold value, it also identifies the robots non uniform movement as below 15 cm since the data also fluctuates. Therefore, this method is not very suitable for real life applications. 
 
 ### lowest()
