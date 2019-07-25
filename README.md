@@ -27,4 +27,4 @@ float data1 = sens1.retValue();
 float data2 = sens2.retValue();
 delay(20);
 ```
-You can look at the multipleSensor.ino files for example codes to publish data from two sensor into seperate ros topics. multipleSensor1.ino uses 2 maxsonar sensors while multipleSensor2 uses one park and one infrared sensor.   
+You can look at the multipleSensor.ino files for example codes to publish data from two sensor into seperate ros topics. multipleSensor1.ino uses 2 maxsonar sensors, multipleSensor2.ino uses one park and one infrared sensor and multipleSensorFiltered.ino uses 2 maxsonar sensors and filters the results using an exponential filter. 
