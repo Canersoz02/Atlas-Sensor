@@ -43,3 +43,4 @@ a.pub.publish(lowest(arr))
 ```
 Each of the methods will be evaluated below:
 
+### avg():
